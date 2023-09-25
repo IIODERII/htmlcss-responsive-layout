@@ -250,6 +250,14 @@ main{
     color: var(--color-secondary);
 }
 
+#intro .card{
+    text-align: center;
+}
+
+#intro .col:first-child > .card{
+    text-align: start;
+}
+
 /* planning */
 
 
