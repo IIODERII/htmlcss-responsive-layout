@@ -379,6 +379,30 @@ main{
 }
 
 /* cta */
+#cta p a{
+    text-decoration: underline;
+}
+
+#cta h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+#cta h3{
+    font-size: 2em;
+}
+
+#cta .cta{
+    font-size: 4em;
+    color: var(--color-contrast);
+    font-weight: bold;
+}
+
+#cta .btn{
+    color: var(--color-primary);
+    padding: 20px 70px;
+    border-radius: 50px;
+}
 
 /* *****************************************
                 footer
