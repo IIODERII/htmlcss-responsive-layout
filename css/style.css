@@ -344,8 +344,39 @@ main{
 }
 
 /* about-us */
+#about-us h2{
+    font-size: 2em;
+}
 
+#about-us .right{
+    position: relative;
+}
 
+#about-us .right .circle{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+#about-us .right .circle img{
+    object-fit: cover;
+}
+
+#about-us .right .fa-solid.fa-quote-left{
+    position: absolute;
+    font-size: 4em;
+    left: 110px;
+    top: -5px;
+}
+
+#about-us h3{
+    font-size: 1.5em;
+}
+
+#about-us .right .btn{
+    font-size: 1em;
+    border-radius: 55px;
+}
 
 /* cta */
 
