@@ -52,8 +52,13 @@ body{
     padding-bottom: 20px;
 }
 
+.my-50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .container{
-    padding: 15px;
+    padding: 40px 15px;
 }
 
 img{
@@ -284,8 +289,32 @@ main{
 }
 
 /* testimonials */
+#testimonials .container{
+    text-align: center;
+}
 
+#testimonials h2{
+    font-size: 0.9em;
+}
 
+#testimonials h3{
+    font-size: 2em;
+}
+
+#testimonials .big-radius{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+#testimonials .big-radius .circle{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+#testimonials .big-radius .circle img{
+    object-fit: cover;
+}
 
 /* benefits */
 
