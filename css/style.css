@@ -412,6 +412,15 @@ footer{
     color: var(--color-light);
 }
 
+footer p{
+    padding-top: 50px;
+}
+
+footer a{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
 /* *****************************************
                media query
 ***************************************** */
