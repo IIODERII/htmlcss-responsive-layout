@@ -1,0 +1,325 @@
+/* *****************************************
+                setup
+***************************************** */
+
+:root {
+	--color-secondary: #0084fd;
+	--color-dark: #333333;
+	--color-light: #ffffff;
+	--color-primary: #9792e4;
+	--color-bg-card: #b5ddff;
+	--color-contrast: #fcc060;
+	--color-text: #424242;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-light);
+    color: var(--color-text);
+}
+
+/* *****************************************
+                utilities
+***************************************** */
+.px-10{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.px-20{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    padding: 5px;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* bordi arrotondati */
+
+.small-radius{
+    border-radius: 10px;
+}
+
+.big-radius{
+    border-radius: 30px;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+/* colors bg */
+
+.bg-light{
+    background-color: var(--color-light);
+}
+
+.bg-card{
+    background-color: var(--color-bg-card);
+}
+
+.bg-primary{
+    background-color: var(--color-primary);
+}
+
+/* testo */
+
+.text-light{
+    color: var(--color-light);
+}
+
+.text-secondary{
+    color: var(--color-secondary);
+}
+
+.text-primary{
+    color: var(--color-primary);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.line-height{
+    line-height: 1.5;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* buttons */
+
+.btn{
+    border-radius: 15px;
+    padding: 6px 25px;
+    background-color: var(--color-primary);
+    font-size: 1.3em;
+    transition: all 0.2s;
+}
+
+.btn-secondary{
+    background-color: var(--color-secondary);
+}
+
+.btn-secondary:hover{
+    background-color: #0040ff;
+}
+
+.btn-light{
+    background-color: var(--color-light);
+    color: var(--color-text);
+}
+
+.btn-light:hover{
+    background-color: #ccc;
+}
+
+/* *****************************************
+               flex utilities
+***************************************** */
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.j-between{
+    justify-content: space-between;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.j-start{
+    justify-content: flex-start;
+}
+
+.a-start{
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.a-center{
+    align-items: center;
+    align-content: center;
+}
+
+/* *****************************************
+                header
+***************************************** */
+header{
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav{
+    position: relative;
+    height: 60px;
+}
+
+#logo{
+    width: 70px;
+}
+
+.nav-container{
+    height: 50px;
+    width: 50px;
+}
+
+header .fa-solid.fa-bars{
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 18px 20px;
+    transition: all 0.5s;
+}
+
+header .nav-container:hover > .fa-solid.fa-bars{
+    transform: rotate(90deg);
+}
+
+header .nav-container:hover > ul{
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-secondary);
+    padding: 10px;
+    width: 180px;
+    text-align: end;
+}
+
+nav ul{
+    display: none;
+    list-style: none;
+    
+}
+
+nav ul li a{
+    color: var(--color-light);
+    margin-bottom: 10px;
+}
+
+/* *****************************************
+                main
+***************************************** */
+
+main{
+    padding-top: 100px;
+}
+
+/* intro */
+
+#intro .card-image{
+    position: relative;
+    top: 15px;
+}
+
+#intro .icon{
+    font-size: 3em;
+    color: var(--color-secondary);
+}
+
+/* planning */
+
+
+
+/* testimonials */
+
+
+
+/* benefits */
+
+
+
+/* about-us */
+
+
+
+/* cta */
+
+/* *****************************************
+                footer
+***************************************** */
+footer{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+/* *****************************************
+               media query
+***************************************** */
+
+@media screen and (min-width: 576px) {
+    .tablet-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #intro .col{
+        width: calc(100% / 3);
+    }
+
+    #intro .col:first-child{
+        width: calc((100% / 3) * 2);
+    }
+
+    #intro .card{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav ul{
+        display: flex;
+    }
+
+    nav .fa-solid.fa-bars{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+
+    #intro .col:first-child .card{
+        display: flex;
+    }
+
+    #intro .card-content{
+        width: 50%;
+    }
+}
